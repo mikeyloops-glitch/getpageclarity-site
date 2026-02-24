@@ -1,1 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PageClarity — 48H Landing Page Conversion Tune‑Up</title>
+  <meta name="description" content="48H landing page conversion tune-up. Clearer positioning, stronger CTAs, and a measurable tracking plan. English + Italian." />
+  <style>
+    :root{--bg:#0b1220;--card:#101a2e;--text:#eaf0ff;--muted:#b9c3dd;--accent:#6ee7ff;--accent2:#a78bfa;--ok:#34d399;--warn:#fbbf24;}
+    *{box-sizing:border-box} body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; background:linear-gradient(180deg,#070b14, #0b1220 30%, #070b14); color:var(--text);} 
+    a{color:inherit} .wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px;}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+    .brand{font-weight:800;letter-spacing:.3px} .pill{display:inline-block;padding:6px 10px;border:1px solid rgba(255,255,255,.14);border-radius:999px;color:var(--muted);font-size:12px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:22px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}}
+    .hcard,.card{background:rgba(16,26,46,.8);border:1px solid rgba(255,255,255,.10);border-radius:16px;padding:18px;backdrop-filter: blur(10px)}
+    h1{margin:0 0 10px;font-size:40px;line-height:1.1}
+    .sub{color:var(--muted);font-size:16px;line-height:1.5}
+    .ctaRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-block;padding:12px 14px;border-radius:12px;font-weight:700;text-decoration:none;border:1px solid rgba(255,255,255,.14)}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2)); color:#06101a; border:none}
+    .btn.ghost{background:transparent}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .k{font-weight:800} .m{color:var(--muted);font-size:14px;line-height:1.45}
+    .list{margin:10px 0 0;padding-left:18px;color:var(--muted)}
+    .price{font-size:34px;font-weight:900;margin:8px 0 2px}
+    .strike{color:var(--muted);text-decoration:line-through}
+    .tag{display:inline-block;margin-left:8px;font-size:12px;padding:4px 8px;border-radius:999px;background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.25);color:var(--ok)}
+    details{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:10px 12px;margin-top:10px}
+    summary{cursor:pointer;font-weight:700}
+    footer{margin-top:26px;color:var(--muted);font-size:13px}
+    .lang{margin-top:10px}
+    .note{color:var(--muted);font-size:12px;margin-top:10px}
+    .small{font-size:12px;color:var(--muted)}
+    .hr{height:1px;background:rgba(255,255,255,.08);margin:18px 0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">PageClarity</div>
+      <div class="pill">48H Landing Page Conversion Tune‑Up • EN/IT</div>
+    </div>
+
+    <div class="hero">
+      <div class="hcard">
+        <h1>Get a clearer landing page in 48 hours — and a stronger reason to click.</h1>
+        <div class="sub">For micro‑SaaS, freelancers, coaches, and small agencies. I rewrite and restructure your page so your offer is obvious, your CTA is compelling, and you can measure what’s working.</div>
+        <div class="ctaRow">
+          <a class="btn primary" href="#buy">Reserve a slot (launch price)</a>
+          <a class="btn ghost" href="#sample">See what you get</a>
+        </div>
+        <div class="note">No fake claims. No long retainers. If you don’t have a page yet, we’ll tune up a one‑page draft.</div>
+      </div>
+
+      <div class="card" id="buy">
+        <div class="k">Launch offer</div>
+        <div class="price">€149 <span class="tag">First 5 slots</span></div>
+        <div class="m"><span class="strike">€299</span> standard price after launch slots fill.</div>
+        <ul class="list">
+          <li>48h turnaround</li>
+          <li>Copy + section structure</li>
+          <li>3 headlines + 3 CTAs</li>
+          <li>5 FAQs</li>
+          <li>Simple tracking plan (events + UTMs)</li>
+        </ul>
+        <div class="hr"></div>
+        <div class="k">Checkout (PayPal)</div>
+        <div class="m">Button will be enabled after you approve the final page + checkout flow.</div>
+        <div class="ctaRow">
+          <a class="btn primary" href="#" aria-disabled="true">Pay with PayPal (pending)</a>
+          <a class="btn ghost" href="#intake">Answer 6 quick intake questions</a>
+        </div>
+        <div class="small">Add‑on: Bilingual EN+IT version +€49</div>
+      </div>
+    </div>
+
+    <div class="grid" id="sample">
+      <div class="card"><div class="k">What you receive</div><div class="m">An annotated “before/after” doc + final copy blocks you can paste into Webflow/Framer/Carrd/WordPress.</div></div>
+      <div class="card"><div class="k">Who it’s for</div><div class="m">You already have traffic (or will soon) but your page isn’t converting because the message isn’t landing.</div></div>
+      <div class="card"><div class="k">What it’s not</div><div class="m">Not SEO. Not ads management. Not a 6‑week brand project. Just conversion clarity, fast.</div></div>
+    </div>
+
+    <div class="card" id="intake" style="margin-top:12px">
+      <div class="k">Intake (6 questions)</div>
+      <div class="m">We’ll connect this to a form (Tally/Google Form) after approval. Questions:</div>
+      <ul class="list">
+        <li>Landing page URL</li>
+        <li>What you sell + price</li>
+        <li>Ideal customer (1 sentence)</li>
+        <li>Main objection you hear</li>
+        <li>Your #1 competitor</li>
+        <li>Your CTA goal (buy/book/demo/email)</li>
+      </ul>
+    </div>
+
+    <div class="lang card">
+      <div class="k">Italian version (preview)</div>
+      <div class="m"><strong>In 48 ore</strong> rendo la tua landing più chiara e orientata alla conversione: messaggio, CTA, FAQ e un piano di tracking semplice per misurare i risultati. <em>(Versione completa EN/IT disponibile come add‑on.)</em></div>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <div class="k">FAQ</div>
+      <details><summary>What if I don’t like the first draft?</summary><div class="m">You get 1 revision pass focused on clarity + conversion. We’ll iterate once, then ship.</div></details>
+      <details><summary>Do you implement changes on my site?</summary><div class="m">Default is “handoff copy blocks” (fast). If you want implementation, we can add it later.</div></details>
+      <details><summary>Is this guaranteed to increase conversions?</summary><div class="m">No guarantees. You’ll get a higher‑clarity page + measurement plan so you can test and improve.</div></details>
+      <details><summary>What do you need from me?</summary><div class="m">Your URL, offer, target customer, competitor, and desired CTA. ~10 minutes.</div></details>
+    </div>
+
+    <footer>
+      <div><a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a> • <a href="contact.html">Contact</a></div>
+      <div class="note">MVP page — payment button will be activated only after your approval.</div>
+    </footer>
+  </div>
+</body>
+</html>
 
